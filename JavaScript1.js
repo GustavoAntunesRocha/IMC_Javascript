@@ -1,5 +1,6 @@
 function calcImc(){
-    var peso = document.getElementById("pesoId").value;
-    var imc = peso + 2;
-    alert("O seu IMC é: "+peso);
+    var peso =parseFloat(document.getElementById("pesoId").value);
+    var altura =parseFloat(document.getElementById("alturaId").value);
+    var imc = peso / (altura*altura);
+    alert("O seu IMC é: "+imc);
 }
